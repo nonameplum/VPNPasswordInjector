@@ -83,7 +83,7 @@ void MyAXObserverCallback( AXObserverRef observer, AXUIElementRef element,
                             role = [self getStringRoleFrom:textFieldObject];
                             if (kCFCompareEqualTo == CFStringCompare(role, kAXTextFieldRole, 0)) {
                                 // Fill password
-                                textStr = @"btm0hic09q";
+                                textStr = [[NSUserDefaults standardUserDefaults] stringForKey:@"vpnPasswordKeyPath"];
                                 AXUIElementSetAttributeValue(textFieldObject, kAXValueAttribute, (__bridge CFTypeRef _Nonnull)(textStr));
                                 
                                 [NSThread sleepForTimeInterval:0.1f];
