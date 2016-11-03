@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C840EDA81DCB1B31001E402E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C840EDA71DCB1B31001E402E /* main.m */; };
+		C840EDBB1DCB1B31001E402E /* VPNPasswordInjectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C840EDBA1DCB1B31001E402E /* VPNPasswordInjectorTests.m */; };
+		C840EDC61DCB1B31001E402E /* VPNPasswordInjectorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C840EDC51DCB1B31001E402E /* VPNPasswordInjectorUITests.m */; };
+		C840EDD81DCB1B79001E402E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C840EDD41DCB1B79001E402E /* AppDelegate.m */; };
+		C840EDD91DCB1B79001E402E /* PopoverContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C840EDD61DCB1B79001E402E /* PopoverContentViewController.m */; };
+		C840EDDA1DCB1B79001E402E /* PopoverContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C840EDD71DCB1B79001E402E /* PopoverContentViewController.xib */; };
+		C840EDDD1DCB1B90001E402E /* FocusObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = C840EDDC1DCB1B90001E402E /* FocusObserver.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C840EDB71DCB1B31001E402E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C840ED981DCB1B30001E402E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C840ED9F1DCB1B30001E402E;
+			remoteInfo = VPNPasswordInjector;
+		};
+		C840EDC21DCB1B31001E402E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C840ED981DCB1B30001E402E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C840ED9F1DCB1B30001E402E;
+			remoteInfo = VPNPasswordInjector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C840EDA01DCB1B30001E402E /* VPNPasswordInjector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VPNPasswordInjector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C840EDA71DCB1B31001E402E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C840EDB11DCB1B31001E402E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C840EDB61DCB1B31001E402E /* VPNPasswordInjectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VPNPasswordInjectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C840EDBA1DCB1B31001E402E /* VPNPasswordInjectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPNPasswordInjectorTests.m; sourceTree = "<group>"; };
+		C840EDBC1DCB1B31001E402E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C840EDC11DCB1B31001E402E /* VPNPasswordInjectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VPNPasswordInjectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C840EDC51DCB1B31001E402E /* VPNPasswordInjectorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VPNPasswordInjectorUITests.m; sourceTree = "<group>"; };
+		C840EDC71DCB1B31001E402E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C840EDD31DCB1B79001E402E /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C840EDD41DCB1B79001E402E /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C840EDD51DCB1B79001E402E /* PopoverContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverContentViewController.h; sourceTree = "<group>"; };
+		C840EDD61DCB1B79001E402E /* PopoverContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverContentViewController.m; sourceTree = "<group>"; };
+		C840EDD71DCB1B79001E402E /* PopoverContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverContentViewController.xib; sourceTree = "<group>"; };
+		C840EDDB1DCB1B90001E402E /* FocusObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusObserver.h; sourceTree = "<group>"; };
+		C840EDDC1DCB1B90001E402E /* FocusObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusObserver.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C840ED9D1DCB1B30001E402E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C840EDB31DCB1B31001E402E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C840EDBE1DCB1B31001E402E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C840ED971DCB1B30001E402E = {
+			isa = PBXGroup;
+			children = (
+				C840EDA21DCB1B30001E402E /* VPNPasswordInjector */,
+				C840EDB91DCB1B31001E402E /* VPNPasswordInjectorTests */,
+				C840EDC41DCB1B31001E402E /* VPNPasswordInjectorUITests */,
+				C840EDA11DCB1B30001E402E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C840EDA11DCB1B30001E402E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C840EDA01DCB1B30001E402E /* VPNPasswordInjector.app */,
+				C840EDB61DCB1B31001E402E /* VPNPasswordInjectorTests.xctest */,
+				C840EDC11DCB1B31001E402E /* VPNPasswordInjectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C840EDA21DCB1B30001E402E /* VPNPasswordInjector */ = {
+			isa = PBXGroup;
+			children = (
+				C840EDD31DCB1B79001E402E /* AppDelegate.h */,
+				C840EDD41DCB1B79001E402E /* AppDelegate.m */,
+				C840EDDB1DCB1B90001E402E /* FocusObserver.h */,
+				C840EDDC1DCB1B90001E402E /* FocusObserver.m */,
+				C840EDD51DCB1B79001E402E /* PopoverContentViewController.h */,
+				C840EDD61DCB1B79001E402E /* PopoverContentViewController.m */,
+				C840EDD71DCB1B79001E402E /* PopoverContentViewController.xib */,
+				C840EDB11DCB1B31001E402E /* Info.plist */,
+				C840EDA61DCB1B31001E402E /* Supporting Files */,
+			);
+			path = VPNPasswordInjector;
+			sourceTree = "<group>";
+		};
+		C840EDA61DCB1B31001E402E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C840EDA71DCB1B31001E402E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C840EDB91DCB1B31001E402E /* VPNPasswordInjectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				C840EDBA1DCB1B31001E402E /* VPNPasswordInjectorTests.m */,
+				C840EDBC1DCB1B31001E402E /* Info.plist */,
+			);
+			path = VPNPasswordInjectorTests;
+			sourceTree = "<group>";
+		};
+		C840EDC41DCB1B31001E402E /* VPNPasswordInjectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C840EDC51DCB1B31001E402E /* VPNPasswordInjectorUITests.m */,
+				C840EDC71DCB1B31001E402E /* Info.plist */,
+			);
+			path = VPNPasswordInjectorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C840ED9F1DCB1B30001E402E /* VPNPasswordInjector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C840EDCA1DCB1B31001E402E /* Build configuration list for PBXNativeTarget "VPNPasswordInjector" */;
+			buildPhases = (
+				C840ED9C1DCB1B30001E402E /* Sources */,
+				C840ED9D1DCB1B30001E402E /* Frameworks */,
+				C840ED9E1DCB1B30001E402E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VPNPasswordInjector;
+			productName = VPNPasswordInjector;
+			productReference = C840EDA01DCB1B30001E402E /* VPNPasswordInjector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C840EDB51DCB1B31001E402E /* VPNPasswordInjectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C840EDCD1DCB1B31001E402E /* Build configuration list for PBXNativeTarget "VPNPasswordInjectorTests" */;
+			buildPhases = (
+				C840EDB21DCB1B31001E402E /* Sources */,
+				C840EDB31DCB1B31001E402E /* Frameworks */,
+				C840EDB41DCB1B31001E402E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C840EDB81DCB1B31001E402E /* PBXTargetDependency */,
+			);
+			name = VPNPasswordInjectorTests;
+			productName = VPNPasswordInjectorTests;
+			productReference = C840EDB61DCB1B31001E402E /* VPNPasswordInjectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C840EDC01DCB1B31001E402E /* VPNPasswordInjectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C840EDD01DCB1B31001E402E /* Build configuration list for PBXNativeTarget "VPNPasswordInjectorUITests" */;
+			buildPhases = (
+				C840EDBD1DCB1B31001E402E /* Sources */,
+				C840EDBE1DCB1B31001E402E /* Frameworks */,
+				C840EDBF1DCB1B31001E402E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C840EDC31DCB1B31001E402E /* PBXTargetDependency */,
+			);
+			name = VPNPasswordInjectorUITests;
+			productName = VPNPasswordInjectorUITests;
+			productReference = C840EDC11DCB1B31001E402E /* VPNPasswordInjectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C840ED981DCB1B30001E402E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Łukasz Śliwiński";
+				TargetAttributes = {
+					C840ED9F1DCB1B30001E402E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					C840EDB51DCB1B31001E402E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C840ED9F1DCB1B30001E402E;
+					};
+					C840EDC01DCB1B31001E402E = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C840ED9F1DCB1B30001E402E;
+					};
+				};
+			};
+			buildConfigurationList = C840ED9B1DCB1B30001E402E /* Build configuration list for PBXProject "VPNPasswordInjector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C840ED971DCB1B30001E402E;
+			productRefGroup = C840EDA11DCB1B30001E402E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C840ED9F1DCB1B30001E402E /* VPNPasswordInjector */,
+				C840EDB51DCB1B31001E402E /* VPNPasswordInjectorTests */,
+				C840EDC01DCB1B31001E402E /* VPNPasswordInjectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C840ED9E1DCB1B30001E402E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C840EDDA1DCB1B79001E402E /* PopoverContentViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C840EDB41DCB1B31001E402E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C840EDBF1DCB1B31001E402E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C840ED9C1DCB1B30001E402E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C840EDD81DCB1B79001E402E /* AppDelegate.m in Sources */,
+				C840EDA81DCB1B31001E402E /* main.m in Sources */,
+				C840EDDD1DCB1B90001E402E /* FocusObserver.m in Sources */,
+				C840EDD91DCB1B79001E402E /* PopoverContentViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C840EDB21DCB1B31001E402E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C840EDBB1DCB1B31001E402E /* VPNPasswordInjectorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C840EDBD1DCB1B31001E402E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C840EDC61DCB1B31001E402E /* VPNPasswordInjectorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C840EDB81DCB1B31001E402E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C840ED9F1DCB1B30001E402E /* VPNPasswordInjector */;
+			targetProxy = C840EDB71DCB1B31001E402E /* PBXContainerItemProxy */;
+		};
+		C840EDC31DCB1B31001E402E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C840ED9F1DCB1B30001E402E /* VPNPasswordInjector */;
+			targetProxy = C840EDC21DCB1B31001E402E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C840EDC81DCB1B31001E402E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C840EDC91DCB1B31001E402E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C840EDCB1DCB1B31001E402E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VPNPasswordInjector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.plum.VPNPasswordInjector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C840EDCC1DCB1B31001E402E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VPNPasswordInjector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.plum.VPNPasswordInjector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C840EDCE1DCB1B31001E402E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VPNPasswordInjectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.plum.VPNPasswordInjectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VPNPasswordInjector.app/Contents/MacOS/VPNPasswordInjector";
+			};
+			name = Debug;
+		};
+		C840EDCF1DCB1B31001E402E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VPNPasswordInjectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.plum.VPNPasswordInjectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VPNPasswordInjector.app/Contents/MacOS/VPNPasswordInjector";
+			};
+			name = Release;
+		};
+		C840EDD11DCB1B31001E402E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VPNPasswordInjectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.plum.VPNPasswordInjectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VPNPasswordInjector;
+			};
+			name = Debug;
+		};
+		C840EDD21DCB1B31001E402E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = VPNPasswordInjectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.plum.VPNPasswordInjectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VPNPasswordInjector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C840ED9B1DCB1B30001E402E /* Build configuration list for PBXProject "VPNPasswordInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C840EDC81DCB1B31001E402E /* Debug */,
+				C840EDC91DCB1B31001E402E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C840EDCA1DCB1B31001E402E /* Build configuration list for PBXNativeTarget "VPNPasswordInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C840EDCB1DCB1B31001E402E /* Debug */,
+				C840EDCC1DCB1B31001E402E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C840EDCD1DCB1B31001E402E /* Build configuration list for PBXNativeTarget "VPNPasswordInjectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C840EDCE1DCB1B31001E402E /* Debug */,
+				C840EDCF1DCB1B31001E402E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C840EDD01DCB1B31001E402E /* Build configuration list for PBXNativeTarget "VPNPasswordInjectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C840EDD11DCB1B31001E402E /* Debug */,
+				C840EDD21DCB1B31001E402E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C840ED981DCB1B30001E402E /* Project object */;
+}
