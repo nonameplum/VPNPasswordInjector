@@ -6,6 +6,8 @@
 //  Copyright © 2016 Łukasz Śliwiński. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
+
 #import "AppDelegate.h"
 #import "FocusObserver.h"
 #import "PopoverContentViewController.h"
@@ -17,6 +19,8 @@
 @property (strong) NSStatusItem *statusBarItem;
 @property (strong) NSPopover *popover;
 @property (strong, nullable) id popoverEventMonitor;
+@property (strong) NSTimer *timer;
+@property float angle;
 
 @end
 
@@ -61,6 +65,7 @@
     self.statusBarItem.highlightMode = YES;
     self.statusBarItem.title = @"⤽";
     self.statusBarItem.button.font = [NSFont systemFontOfSize:20];
+    self.statusBarItem.button.wantsLayer = YES;
     
     self.statusMenu = [[NSMenu alloc] init];
     self.statusMenu.delegate = self;
@@ -84,6 +89,14 @@
                                                         selector:@selector(darkModeChanged:)
                                                             name:@"AppleInterfaceThemeChangedNotification"
                                                           object:nil];
+    
+    NSMenuItem *animationMenuItem = [[NSMenuItem alloc] initWithTitle:@"Animation test"
+                                                                   action:@selector(animationMenuActionHandler)
+                                                            keyEquivalent:@""];
+    animationMenuItem.target = self;
+    
+    [self.statusMenu addItem:animationMenuItem];
+    
 }
 
 - (void)preferencesMenuActionHandler {
@@ -94,9 +107,27 @@
     [NSApp terminate:self];
 }
 
+- (void)animationMenuActionHandler {
+    [self animateStatusBarButton];
+}
+
 - (void)darkModeChanged:(NSNotification *)notification {
     [self.statusBarItem.button setNeedsDisplay];
     [self.statusBarItem.button displayIfNeeded];
+}
+
+- (void)animateStatusBarButton {
+    if ([self.statusBarItem.button.layer animationForKey:@"spinAnimation"]) {
+        [self.statusBarItem.button.layer removeAllAnimations];
+    } else {
+        CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+        animation.fromValue = @0;
+        animation.toValue = @(M_PI * 2);
+        animation.duration = 0.5;
+        animation.repeatCount = INFINITY;
+        
+        [self.statusBarItem.button.layer addAnimation:animation forKey:@"spinAnimation"];
+    }
 }
 
 # pragma mark - Popover
