@@ -14,6 +14,7 @@
 		C840EDD91DCB1B79001E402E /* PopoverContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C840EDD61DCB1B79001E402E /* PopoverContentViewController.m */; };
 		C840EDDA1DCB1B79001E402E /* PopoverContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C840EDD71DCB1B79001E402E /* PopoverContentViewController.xib */; };
 		C840EDDD1DCB1B90001E402E /* FocusObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = C840EDDC1DCB1B90001E402E /* FocusObserver.m */; };
+		FAA3A7331DCD4348001E984B /* PLSecureTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAA3A7321DCD4348001E984B /* PLSecureTextFieldCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		C840EDD71DCB1B79001E402E /* PopoverContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverContentViewController.xib; sourceTree = "<group>"; };
 		C840EDDB1DCB1B90001E402E /* FocusObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusObserver.h; sourceTree = "<group>"; };
 		C840EDDC1DCB1B90001E402E /* FocusObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusObserver.m; sourceTree = "<group>"; };
+		FAA3A7311DCD4348001E984B /* PLSecureTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSecureTextFieldCell.h; sourceTree = "<group>"; };
+		FAA3A7321DCD4348001E984B /* PLSecureTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSecureTextFieldCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +107,12 @@
 				C840EDD41DCB1B79001E402E /* AppDelegate.m */,
 				C840EDDB1DCB1B90001E402E /* FocusObserver.h */,
 				C840EDDC1DCB1B90001E402E /* FocusObserver.m */,
+				C840EDB11DCB1B31001E402E /* Info.plist */,
+				FAA3A7311DCD4348001E984B /* PLSecureTextFieldCell.h */,
+				FAA3A7321DCD4348001E984B /* PLSecureTextFieldCell.m */,
 				C840EDD51DCB1B79001E402E /* PopoverContentViewController.h */,
 				C840EDD61DCB1B79001E402E /* PopoverContentViewController.m */,
 				C840EDD71DCB1B79001E402E /* PopoverContentViewController.xib */,
-				C840EDB11DCB1B31001E402E /* Info.plist */,
 				C840EDA61DCB1B31001E402E /* Supporting Files */,
 			);
 			path = VPNPasswordInjector;
@@ -271,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C840EDD81DCB1B79001E402E /* AppDelegate.m in Sources */,
+				FAA3A7331DCD4348001E984B /* PLSecureTextFieldCell.m in Sources */,
 				C840EDA81DCB1B31001E402E /* main.m in Sources */,
 				C840EDDD1DCB1B90001E402E /* FocusObserver.m in Sources */,
 				C840EDD91DCB1B79001E402E /* PopoverContentViewController.m in Sources */,
@@ -491,6 +497,7 @@
 				C840EDCC1DCB1B31001E402E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C840EDCD1DCB1B31001E402E /* Build configuration list for PBXNativeTarget "VPNPasswordInjectorTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +506,7 @@
 				C840EDCF1DCB1B31001E402E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C840EDD01DCB1B31001E402E /* Build configuration list for PBXNativeTarget "VPNPasswordInjectorUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +515,7 @@
 				C840EDD21DCB1B31001E402E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
