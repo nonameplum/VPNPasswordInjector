@@ -13,7 +13,8 @@
 		C840EDD81DCB1B79001E402E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C840EDD41DCB1B79001E402E /* AppDelegate.m */; };
 		C840EDD91DCB1B79001E402E /* PopoverContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C840EDD61DCB1B79001E402E /* PopoverContentViewController.m */; };
 		C840EDDA1DCB1B79001E402E /* PopoverContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C840EDD71DCB1B79001E402E /* PopoverContentViewController.xib */; };
-		C840EDDD1DCB1B90001E402E /* FocusObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = C840EDDC1DCB1B90001E402E /* FocusObserver.m */; };
+		C840EDDD1DCB1B90001E402E /* VPNPasswordInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = C840EDDC1DCB1B90001E402E /* VPNPasswordInjector.m */; };
+		C8C9AC021DD0A56E00E64C1B /* NSWindow+canBecomeKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C9AC011DD0A56E00E64C1B /* NSWindow+canBecomeKeyWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +49,10 @@
 		C840EDD51DCB1B79001E402E /* PopoverContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverContentViewController.h; sourceTree = "<group>"; };
 		C840EDD61DCB1B79001E402E /* PopoverContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverContentViewController.m; sourceTree = "<group>"; };
 		C840EDD71DCB1B79001E402E /* PopoverContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverContentViewController.xib; sourceTree = "<group>"; };
-		C840EDDB1DCB1B90001E402E /* FocusObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusObserver.h; sourceTree = "<group>"; };
-		C840EDDC1DCB1B90001E402E /* FocusObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusObserver.m; sourceTree = "<group>"; };
+		C840EDDB1DCB1B90001E402E /* VPNPasswordInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VPNPasswordInjector.h; sourceTree = "<group>"; };
+		C840EDDC1DCB1B90001E402E /* VPNPasswordInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VPNPasswordInjector.m; sourceTree = "<group>"; };
+		C8C9AC001DD0A56E00E64C1B /* NSWindow+canBecomeKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+canBecomeKeyWindow.h"; sourceTree = "<group>"; };
+		C8C9AC011DD0A56E00E64C1B /* NSWindow+canBecomeKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+canBecomeKeyWindow.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +105,12 @@
 			children = (
 				C840EDD31DCB1B79001E402E /* AppDelegate.h */,
 				C840EDD41DCB1B79001E402E /* AppDelegate.m */,
-				C840EDDB1DCB1B90001E402E /* FocusObserver.h */,
-				C840EDDC1DCB1B90001E402E /* FocusObserver.m */,
+				C840EDDB1DCB1B90001E402E /* VPNPasswordInjector.h */,
+				C840EDDC1DCB1B90001E402E /* VPNPasswordInjector.m */,
 				C840EDD51DCB1B79001E402E /* PopoverContentViewController.h */,
 				C840EDD61DCB1B79001E402E /* PopoverContentViewController.m */,
+				C8C9AC001DD0A56E00E64C1B /* NSWindow+canBecomeKeyWindow.h */,
+				C8C9AC011DD0A56E00E64C1B /* NSWindow+canBecomeKeyWindow.m */,
 				C840EDD71DCB1B79001E402E /* PopoverContentViewController.xib */,
 				C840EDB11DCB1B31001E402E /* Info.plist */,
 				C840EDA61DCB1B31001E402E /* Supporting Files */,
@@ -271,8 +276,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C840EDD81DCB1B79001E402E /* AppDelegate.m in Sources */,
+				C8C9AC021DD0A56E00E64C1B /* NSWindow+canBecomeKeyWindow.m in Sources */,
 				C840EDA81DCB1B31001E402E /* main.m in Sources */,
-				C840EDDD1DCB1B90001E402E /* FocusObserver.m in Sources */,
+				C840EDDD1DCB1B90001E402E /* VPNPasswordInjector.m in Sources */,
 				C840EDD91DCB1B79001E402E /* PopoverContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +497,7 @@
 				C840EDCC1DCB1B31001E402E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C840EDCD1DCB1B31001E402E /* Build configuration list for PBXNativeTarget "VPNPasswordInjectorTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +506,7 @@
 				C840EDCF1DCB1B31001E402E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C840EDD01DCB1B31001E402E /* Build configuration list for PBXNativeTarget "VPNPasswordInjectorUITests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +515,7 @@
 				C840EDD21DCB1B31001E402E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

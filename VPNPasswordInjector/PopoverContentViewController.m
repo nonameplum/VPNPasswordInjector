@@ -1,6 +1,6 @@
 //
 //  PopoverContentViewController.m
-//  StatusBarApp
+//  VPNPasswordInjector
 //
 //  Created by Łukasz Śliwiński on 02/11/2016.
 //  Copyright © 2016 Łukasz Śliwiński. All rights reserved.
@@ -35,10 +35,11 @@ NSString *const VPN_PASSWORD_KEYPATH = @"vpnPasswordKeyPath";
 - (void)viewWillAppear {
     [super viewWillAppear];
     
-    BOOL isDark = [[[NSUserDefaults standardUserDefaults] stringForKey:@"AppleInterfaceStyle"]  isEqual: @"Dark"];
+    BOOL isDark = [[[NSUserDefaults standardUserDefaults] stringForKey:@"AppleInterfaceStyle"] isEqual: @"Dark"];
     
     self.vpnPasswordTextField.backgroundColor = isDark ? [NSColor colorWithWhite:0.5 alpha:0.65] : [NSColor colorWithWhite:0.93 alpha:1.0];
     self.vpnPasswordTextField.layer.borderColor = isDark ? [[NSColor colorWithWhite:0.65 alpha:0.75] CGColor] : [[NSColor colorWithWhite:1.0 alpha:1.0] CGColor];
+
 }
 
 # pragma mark - Actions
