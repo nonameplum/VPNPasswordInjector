@@ -13,7 +13,6 @@
 #import "AppDelegate.h"
 #import "VPNPasswordInjector.h"
 #import "PopoverContentViewController.h"
-#import "NSWindow+canBecomeKeyWindow.h"
 
 static CGFloat const ANIMATION_DURATION = 0.5;
 
@@ -123,12 +122,7 @@ static CGFloat const ANIMATION_DURATION = 0.5;
         self.popover.contentViewController = popoverContentViewController;
     }
     
-    shouldBecomeKeyWindow = YES;
-    
     [self.popover showRelativeToRect:NSZeroRect ofView:self.statusBarItem.button preferredEdge:NSMinYEdge];
-    
-    windowToOverride = self.popover.contentViewController.view.window;
-    [windowToOverride becomeKeyWindow];
     
     self.popoverEventMonitor = [NSEvent addGlobalMonitorForEventsMatchingMask:NSEventMaskLeftMouseUp handler:^(NSEvent * _Nonnull event) {
         [self closePopover];

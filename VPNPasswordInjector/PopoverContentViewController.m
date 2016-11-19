@@ -23,10 +23,7 @@ NSString *const VPN_PASSWORD_KEYPATH = @"vpnPasswordKeyPath";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.vpnPasswordTextField.bezeled = NO;
-    self.vpnPasswordTextField.focusRingType = NSFocusRingTypeNone;
-    self.vpnPasswordTextField.delegate = self;
-    self.vpnPasswordTextField.layer.borderWidth = 1;
+    [self customizePasswordTextField:self.vpnPasswordTextField];
     
     NSString *password = [[NSUserDefaults standardUserDefaults] stringForKey:VPN_PASSWORD_KEYPATH];
     self.vpnPasswordTextField.stringValue = password ? password : @"";
@@ -36,10 +33,20 @@ NSString *const VPN_PASSWORD_KEYPATH = @"vpnPasswordKeyPath";
     [super viewWillAppear];
     
     BOOL isDark = [[[NSUserDefaults standardUserDefaults] stringForKey:@"AppleInterfaceStyle"] isEqual: @"Dark"];
-    
-    self.vpnPasswordTextField.backgroundColor = isDark ? [NSColor colorWithWhite:0.5 alpha:0.65] : [NSColor colorWithWhite:0.93 alpha:1.0];
-    self.vpnPasswordTextField.layer.borderColor = isDark ? [[NSColor colorWithWhite:0.65 alpha:0.75] CGColor] : [[NSColor colorWithWhite:1.0 alpha:1.0] CGColor];
+    self.vpnPasswordTextField.layer.backgroundColor = isDark ? [NSColor colorWithWhite:0.5 alpha:0.5].CGColor : [NSColor colorWithWhite:0.95 alpha:1.0].CGColor;
+    self.vpnPasswordTextField.layer.borderColor = isDark ? [[NSColor colorWithWhite:0.5 alpha:0.55] CGColor] : [[NSColor colorWithWhite:0.9 alpha:1.0] CGColor];
+}
 
+# pragma mark - Customization
+
+- (void)customizePasswordTextField:(NSTextField *)textField {
+    textField.drawsBackground = NO;
+    textField.wantsLayer = YES;
+    textField.bezeled = NO;
+    textField.focusRingType = NSFocusRingTypeNone;
+    textField.delegate = self;
+    textField.layer.borderWidth = 1;
+    textField.layer.cornerRadius = 3;
 }
 
 # pragma mark - Actions
